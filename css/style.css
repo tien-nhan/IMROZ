@@ -1,0 +1,44 @@
+/*! GLOBAL  */
+html,
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*! HEAEDER  */
+.header-imroz {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+}
+
+.header-imroz .header-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    flex-wrap: wrap;
+
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-imroz .logo a {
+    display: block;
+}
+.header-imroz .logo a img {
+    max-height: 60px;
+}
