@@ -8,6 +8,10 @@ a {
     transition: all 0.4s ease-in-out 0s;
     text-decoration: none;
 }
+.container {
+    padding-right: 44px;
+    padding-left: 44px;
+}
 
 
 /*! HEAEDER  */
@@ -306,9 +310,258 @@ a.btn-transparent {
     font-weight: 300;
 }
 
-.container{
-    margin-right: auto;
-    margin-left: auto;
+/*! PORTFOLIO  */
+
+section.portfolio {
+    padding: 120px 0;
+    background-image: url(/image/bg-image-3.jpg);
 }
 
-/*! PORTFOLIO  */
+.row > [class*=col] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mb--15 {
+    margin-bottom: 15px;
+}
+
+.section-title span.subtitle {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.theme-gradient, .section-title span.subtitle, a.btn-transparent {
+    background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.section-title h2.title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 62px;
+    margin-bottom: 20px;
+}
+.section-title.service-style--3 p {
+    padding: 0 21%;
+    font-weight: 200;
+    color: #717173;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        -webkit-box-flex: 0;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+.im_portfolio {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1), box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    margin-top: 40px;
+}
+
+.im_portfolio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.22);
+    
+}
+
+
+.im_portfolio .thumbnail_inner .thumbnail a {
+    display: block;
+}
+
+.im_portfolio .thumbnail_inner .thumbnail a img {
+    transition: transform 1s ease, opacity 0.5s ease 0.25s;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.1);
+}
+
+.im_portfolio .content .inner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 30px 30px;
+    z-index: 2;
+    width: 100%;
+    transform: translateX(-50%);
+}   
+.im_portfolio .content .inner .portfolio_heading {
+    transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1), transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+.im_portfolio .content .inner .portfolio_heading .category_list {
+    margin: -5px;
+    margin-bottom: 5px;
+}
+.im_portfolio .content .inner .portfolio_heading .category_list a {
+    color: #ffffff;
+    opacity: 0.7;
+    display: inline-block;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.im_portfolio .content .inner .portfolio_heading .title {
+    color: #ffffff;
+    font-size: 30px;
+}
+.im_portfolio .content .inner .portfolio_heading .title a {
+    color: #ffffff;
+}
+
+.im_portfolio .content .inner .portfolio_hover {
+    opacity: 0;
+    position: absolute;
+    bottom: 35px;
+    margin-top: 10px;
+    transform: translateY(20px);
+    line-height: 1.5em;
+    max-width: 80%;
+    transition: opacity 0.18s cubic-bezier(0.05, 0.2, 0.1, 1), transform 0.18s cubic-bezier(0.05, 0.2, 0.1, 1);
+    height: 62px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.im_portfolio .content .inner .portfolio_hover p {
+    color: #ffffff;
+    opacity: 0.7;
+}
+.mt--60 {
+    margin-top: 60px !important;
+}
+
+a.btn-default, button.btn-default {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;   
+    background: #FD4766;
+    border: 2px solid #FD4766;
+}
+a.btn-default:hover, button.btn-default:hover {
+    transition: all 0.4s ease-in-out;
+    background: transparent;
+    border-color: #FD4766;
+    color: #FD4766;
+}
+
+.about {
+    background: #fff;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .row--35 {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .row--35 > [class*=col], .row--35 > [class*=col-] {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+.about-wrapper .thumbnail {
+    position: relative;
+    z-index: 2;
+}
+.about-wrapper .thumbnail img {
+    border-radius: 8px;
+    box-shadow: none;
+}
+.about-inner .section-title h2.title {
+    line-height: 1.3;
+    margin-bottom: 35px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.about-inner .section-title p.description {
+    font-weight: 300;
+    color: rgba(29,29,36,.75);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .row--35 > [class*=col], .row--35 > [class*=col-] {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+.mt--30 {
+    margin-top: 30px !important;
+}
+ul.tab-style--1 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #E6E6E6;
+    border-radius: 50em;
+    background-color: white;
+}
+ul.tab-style--1 li.nav-item a.active, ul.tab-style--1 li.nav-item button.active {
+    background-color: #FD4766;
+    color: #ffffff;
+}
+ul.tab-style--1 li.nav-item a, ul.tab-style--1 li.nav-item button {
+    cursor: pointer;
+    padding: 0.83333em 34px;
+    border-radius: 50em;
+    font-size: 0.88889em;
+    font-weight: 600;
+    display: inline-block;
+    color: rgba(29,29,36,.75);
+    border: 0 none;
+    transition: 0.3s;
+    max-width: initial;
+    background-color: white;
+}
+.single-tab-content {
+    padding-top: 20px;
+}
+.mt--10 {
+    margin-top: 10px;
+}
+.single-tab-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 8px;
+}
+
+.single-tab-content ul li {
+    color: #7e7e7e;
+    font-size: 16px;
+    line-height: inherit;
+    font-weight: 300;
+}
+.single-tab-content ul.list-style--1 li {
+    margin-bottom: 10px;
+}
+.tabs-area .container{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.single-tab-content p {
+    font-weight: 200;
+    color: #717173;
+    font-size: 18px;
+    line-height: 30px;
+}
